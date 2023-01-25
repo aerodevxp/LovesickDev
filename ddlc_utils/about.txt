@@ -1,0 +1,2 @@
+definitionsGenerator.py - generate character definitions for renpy last updated Nov 22 2021
+Project-Chiwa - trying out renpy to make a small and cute VN
