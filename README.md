@@ -9,8 +9,7 @@ I started coding back in the summer of 2018 for fun. I started off with Python b
 ## Contact me
 You can find my contact info from my bio for business inquiries. If you have a question about one of my projects, please either join the associated Discord server that can be found in the project's README or create an issue for the repository with your question!
 
-[![trophy](https://github-profile-trophy.vercel.app/?username=lovesickdev&theme=onedark)](https://github.com/ryo-ma/github-profile-trophy)
-
+https://img.shields.io/twitter/follow/LovesickDev?style=social
 <!--
 **LovesickDev/LovesickDev** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
