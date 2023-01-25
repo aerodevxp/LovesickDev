@@ -1,0 +1,7 @@
+<YandereScript>:YandereChan:Set:RunSpeed:float:+10
+<YandereScript>:YandereChan:Set:WalkSpeed:float:+10
+<YandereScript>:YandereChan:Set:CrouchWalkSpeed:float:+10
+<YandereScript>:YandereChan:Set:CrouchRunSpeed:float:+10
+<YandereScript>:YandereChan:Set:CrawlSpeed:float:+10
+
+//This cutscene was made by Hatluk, you can find my channel here: https://youtube.com/channel/UC6hksR4ALLiZaKaKAUqFTnQ

@@ -1,0 +1,16 @@
+YanAddNew
+YanPlayExistingAnimation:f02_Task33_Line5
+
+SubtitleSize:1:1:1
+SubtitleColor:1:1:1:1
+SubtitleText:~~~~~~~~~~~~~~~~~~~~~~~~~~
+Wait:3
+SubtitleClean
+
+CharacterAnimationPlay:Student_30 (Kokona Haruka):f02_greet_00
+
+SubtitleSize:1:1:1
+SubtitleColor:1:1:1:1
+SubtitleText:~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Wait:3
+SubtitleClean

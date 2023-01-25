@@ -1,0 +1,7 @@
+//subtracts the alpha value in the subtitle object every frame to look like its fading away
+Seteditobject:Subtitle
+lbl:loop
+<UILabel>:<0>:Set:alpha:float:~0.03
+jmp:loop
+//you could use the command "startcutscene" to play this cutscene , wait 2 seconds and use "destroy:subtitlefadeaway" so it stops subtracting the alpha value of the subtitle every frame
+//cutscene by Rino Fukahori on youtube, or loomnoob#7948

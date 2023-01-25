@@ -1,0 +1,2 @@
+//YanHair:0
+FirstPersonCam:true

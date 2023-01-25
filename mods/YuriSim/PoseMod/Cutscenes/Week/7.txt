@@ -1,0 +1,16 @@
+lbl:CheckForWeekA
+if:(week:7)
+jmp:Week7_t
+jmp:Week7_f
+
+lbl:Week7_t
+OneFrame:true
+StartCutscene:Week/Week7Days/1:true
+StartCutscene:Week/Week7Days/2:true
+StartCutscene:Week/Week7Days/3:true
+StartCutscene:Week/Week7Days/4:true
+StartCutscene:Week/Week7Days/5:true
+OneFrame:false
+
+lbl:Week7_f
+End

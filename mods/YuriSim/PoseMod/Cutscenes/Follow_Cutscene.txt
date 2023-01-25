@@ -1,0 +1,23 @@
+
+
+InEvent:Student_ID (Name):true
+lbl:Loop
+
+if:ObjectNearOtherObject:Student_ID (Name):Student_ID (Name):1.2
+jmp:ObstacleNotNear
+jmp:ObstacleNear
+
+lbl:ObstacleNear
+
+Pathfinding.Enabled:Student_ID (Name):false
+CharacterAnimationCrossfade:Student_ID (Name):f02_idleShort_00/idle_01
+RotateTowards:Student_ID (Name):Student_ID (Name)
+
+jmp:Loop
+
+lbl:ObstacleNotNear
+
+Pathfinding.Enabled:Student_ID (Name):true
+Pathfinding.SetTargetToSpot:Student_ID (Name):Student_ID (Name)
+
+jmp:Loop

@@ -1,0 +1,1 @@
+{"layout": null, "orientation": "sensorLandscape", "package": "com.combodev.chiwa", "include_pil": false, "expansion": true, "name": "Project Chiwa", "update_always": true, "source": false, "icon_name": "Project Chiwa", "version": "1.0", "update_icons": true, "permissions": ["VIBRATE"], "numeric_version": "100", "include_sqlite": false, "store": "none"}

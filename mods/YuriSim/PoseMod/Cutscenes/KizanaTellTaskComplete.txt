@@ -1,0 +1,32 @@
+YanAddNew
+YanPlayExistingAnimation:f02_greet_00
+
+SubtitleSize:1:1:1
+SubtitleColor:1:1:1:1
+SubtitleText:(Sunstars) Done.
+Wait:3
+SubtitleClean
+
+CharacterAnimationPlay:Student_13 (Kizana Sunobu):f02_Task34_Line1
+
+SubtitleSize:1:1:1
+SubtitleColor:1:1:1:1
+SubtitleText:(Kizana) OMG! Thank You So Much!
+Wait:3
+SubtitleClean
+
+
+YanAddNew
+YanPlayExistingAnimation:f02_spectating_00
+
+SubtitleSize:1:1:1
+SubtitleColor:1:1:1:1
+SubtitleText:(Sunstars) No Problem.
+Wait:3
+SubtitleClean
+
+SubtitleSize:9:9:9
+SubtitleColor:1:1:1:1
+SubtitleText:Task Complete!
+Wait:3
+SubtitleClean

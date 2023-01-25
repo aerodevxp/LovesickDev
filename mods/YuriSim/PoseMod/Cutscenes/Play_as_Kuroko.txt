@@ -1,0 +1,55 @@
+Oneframe:true
+SetEditObject:YandereChan
+//made by Rino Fukahori
+YanReplaceAnim:f02_laugh_04:f02_evilLaugh_00
+Shape:<0>:EyeType_Thin:0
+AddAnimationsFrom:Student_86 (Kuroko Kamenaga):<0>
+<YandereScript>:<0>:Set:Numbness:float:0.1
+ChangeYanUniform:5
+YanSetUniform:5
+YanHair:0
+ChangeYanName:Kuroko
+YanSetClub:0
+YanBreastSize:1.25:1.25:1.25
+YanSetIdleAnim:f02_idleCouncilStrict_00
+YanSetWalkAnim:f02_walkCouncilStrict_00
+YandereAnimation.Layer:f02_faceCouncilStrict_00:789
+YanPlayExistingAnimation:f02_faceCouncilStrict_00
+ActivateChild:Student_86 (Kuroko Kamenaga):Bento:true
+Duplicate:PepperSpray:CharSpray
+Attach:CharSpray:YandereChan/Character/PelvisRoot/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightArmRoll/RightForeArm/RightForeArmRoll/RightHand/RightHanditem_Null
+RefLocalPosition:YandereChan/Character/PelvisRoot/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightArmRoll/RightForeArm/RightForeArmRoll/RightHand/RightHanditem_Null/CharSpray:0:0:-0.005
+RefLocalRotation3:YandereChan/Character/PelvisRoot/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightArmRoll/RightForeArm/RightForeArmRoll/RightHand/RightHanditem_Null/CharSpray:0:105:90
+ActivateChild:Student_86 (Kuroko Kamenaga):Bento:false
+
+[kurtex]:<SkinnedMeshRenderer>:Student_86 (Kuroko Kamenaga)/Character/f02/f02_schoolwear_210_h:materials
+<SkinnedMeshRenderer>:YandereChan/Character/f02/f02_schoolwear_210_h:Set:materials:[kurtex]
+
+[bruh]:Character/PelvisRoot/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm
+Attach:Student_86 (Kuroko Kamenaga)/[bruh]/Armband:YandereChan/[bruh]
+RefLocalPosition:YandereChan/[bruh]/Armband:-0.065:-0.005:0.007
+RefLocalRotation3:YandereChan/[bruh]/Armband:0:0:0
+
+HairToYan2:TurtleGlasses:TurtleGlassess
+HairToYan2:TurtleHair:TurtleHairr
+//layer to yan makes blood appear
+LayerToYan2:TurtleHairr
+LayerToYan2:TurtleGlassess
+LayerToYan2:YandereChan/Character/PelvisRoot/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/Armband
+<YandereScript>:<0>:ArraySet:Hairstyles:1:GameObject:TurtleHairr
+YanHair:1
+
+////////////
+//RyobaLaugh
+////////////
+[eighties]:<YandereScript>:<0>:<4>EightiesLaughs
+[eighties2]:<YandereScript>:<0>:<3>EightiesLaughs
+[eighties1]:<YandereScript>:<0>:<2>EightiesLaughs
+[eighties0]:<YandereScript>:<0>:<1>EightiesLaughs
+<YandereScript>:<0>:Set:Laugh4:[eighties]
+<YandereScript>:<0>:Set:Laugh3:[eighties2]
+<YandereScript>:<0>:Set:Laugh2:[eighties1]
+<YandereScript>:<0>:Set:Laugh1:[eighties0]
+Wait:0.8
+Notification:Kuroko!!!
+end

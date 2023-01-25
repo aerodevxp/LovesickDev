@@ -1,0 +1,87 @@
+
+//DEBUG
+enabledebugmenu:false
+settime:450
+timepaused:true
+
+//UI
+uilabelcolor:TimeLabel:0.858, 0.717, 0.984
+uilabelcolor:PeriodLabel:0.858, 0.717, 0.984
+uilabelcolor:DayLabel:0.858, 0.717, 0.984
+uilabelcolor:MoneyLabel:0.831, 0.921, 0.737
+
+startcutscene:y_depend/sanityloop.txt
+
+uilabeltext:Watermark:By ComboDev
+
+Oneframe:true
+
+//Yan to Yuri
+yantodoki:YandereChan:4
+//yanhair:140
+//OpenTexture:face.png
+//Texture:2:YandereChan
+//Texture2:2:YandereChan
+yanbreastsize:2
+changeyanname:Yuri
+setyanpersona:Shy
+
+Oneframe:false
+
+//Enable everyone
+<StudentManagerScript>:StudentManager:Set:Week:int:10
+<StudentManagerScript>:StudentManager:Set:WeekLimit:int:10
+<StudentManagerScript>:StudentManager:Set:Eighties:bool:true
+SpawnStudent:12:Natsuki
+SpawnStudent:13:Kizana Sunobu
+SpawnStudent:14:Oka Ruto
+SpawnStudent:15:Asu Rito
+SpawnStudent:16:Muja Kina
+SpawnStudent:17:Mida Rana
+SpawnStudent:18:Osoro Shidesu
+SpawnStudent:19:Hanako Yamada
+SpawnStudent:20:Megami Saikou
+<StudentManagerScript>:StudentManager:Set:Eighties:bool:false
+
+
+
+Oneframe:true
+allstuddokiuniform
+setmaleuniform:3
+
+//MC
+lefteyecolor:Student_1 (MC):0.98,0.76,0.52
+righteyecolor:Student_1 (MC):0.98,0.76,0.52
+hairstyle:Student_1 (MC):1
+haircolor:Student_1 (MC):0.2,0.12,0.02
+charactersetpersonality:Student_1 (MC):2
+//portrait.create:Student_1 (MC)
+
+//Natsuki
+lefteyecolor:Student_12 (Natsuki):0.99,0.76,1
+righteyecolor:Student_12 (Natsuki):0.99,0.76,1
+hairstyle:Student_12 (Natsuki):0
+hairfromyanto:Student_12 (Natsuki):Natsuki
+changestudentheight:Student_12 (Natsuki):0.95
+//portrait.create:Student_12 (Natsuki)
+
+//Sayori
+lefteyecolor:Student_11 (Sayori):0.64,0.89,0.99
+righteyecolor:Student_11 (Sayori):0.64,0.89,0.99
+hairstyle:Student_11 (Sayori):0
+hairfromyanto:Student_11 (Sayori):Sayori
+//portrait.create:Student_11 (Sayori)
+
+
+//Boobs
+
+<0>:YandereChan/Character/PelvisRoot/Hips/Spine/Spine1/Spine2/Spine3/LeftBreastRENAMED
+JiggleBone.Add:<0>
+JiggleBone.enabled:<0>:true
+JiggleBone.Damping:<0>:0.8
+JiggleBone.Mass:<0>:0.5
+<0>:YandereChan/Character/PelvisRoot/Hips/Spine/Spine1/Spine2/Spine3/RightBreastRENAMED
+JiggleBone.Add:<0>
+JiggleBone.enabled:<0>:true
+JiggleBone.Damping:<0>:0.8
+JiggleBone.Mass:<0>:0.5

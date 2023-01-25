@@ -1,0 +1,83 @@
+///It forces the student to follow a new path
+
+ChangeCurrentDestinationLocation:Student_1 (Taro Yamada):32.12:0:24
+ChangeCurrentDestinationRotation:Student_1 (Taro Yamada):0:90:0
+ChangeActionName:Student_1 (Taro Yamada):6:Stand
+CharacterGetDestination:Student_1 (Taro Yamada)
+CharacterSetIdleAnim:Student_1 (Taro Yamada):waiting_00
+
+
+
+///// Give information to the player via a notification at the bottom right
+
+notification2:Meet Taro in the:outdoor vending machines
+
+
+
+///// Check that the desired student is in the chosen position before starting the cutscene
+
+label:CheckStudentPosition
+EditObject:Student_1 (Taro Yamada)
+if:(EditObjectNearPoint:32.12,0,24:0.15)
+jmp:StudentInPos
+jmp:CheckStudentPosition
+
+label:StudentInPos
+
+
+
+///// Give information to the player via a notification at the bottom right
+
+notification2:approach Taro to:talk to him
+
+///// Check if YanChan is in the chosen position before starting the cutscene
+
+label:CheckYanPosition
+EditObject:YandereChan
+if:(EditObjectNearPoint:33.12,0,24:1)
+jmp:YanInPos
+jmp:CheckYanPosition
+
+label:YanInPos
+
+
+///// Teleport YandereChan to the right position and prevent it from moving
+
+YanCanMove:false
+RefLocalPosition:YandereChan:33.12:0:24
+RefRotation3:YandereChan:0:270:0
+Wait:0.3
+
+anim.crossfade:Student_1 (Taro Yamada):idleChill_00
+
+anim.crossfade:YandereChan:f02_greet_01
+Subtitle.New:Hey! I love you!:2:YandereChan:10:1,1,1,1
+
+
+Wait:2
+
+anim.crossfade:Student_1 (Taro Yamada):greet_00
+
+anim.crossfade:YandereChan:f02_idleLively_00
+Subtitle.New:I like osana.:2:Student_1 (Taro Yamada):10:1,1,1,1
+
+
+
+Wait:2
+
+//// Stop YandereChan and Student_X animation.
+
+animation.stop:YandereChan
+animation.stop:Student_1 (Taro Yamada)
+
+
+//// Allow YandereChan to move
+YanCanMove:true
+
+
+
+
+
+
+Example cutscene created by ShaxOfficial#3164
+Yt channel: https://www.youtube.com/channel/UCfsEeuNIUnjnJzVVrvQtfkg

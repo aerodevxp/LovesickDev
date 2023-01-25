@@ -1,0 +1,9 @@
+/ commands here will start automatically at the main menu scene
+/ (you can create these files with the name of a scene for the other scenes)
+
+
+
+
+
+
+

@@ -1,0 +1,12 @@
+Oneframe:true
+//by Rino Fukahori
+YanHair:0
+DestroyYanPantys
+Activate:YandereChan/Character/f02:false
+Duplicate:Kitten:PlayKitten
+Anim.Stop:PlayKitten/StrayKitten
+EnableComponent:PlayKitten:KittenScript:false
+Attach:PlayKitten:YandereChan/Character/PelvisRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head
+RefLocalPosition:PlayKitten:0:0:0
+RefLocalRotation3:PlayKitten:0:0:0
+LayerToYan2:PlayKitten

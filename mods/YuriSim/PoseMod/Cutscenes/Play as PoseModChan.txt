@@ -1,0 +1,18 @@
+Oneframe:true
+YanHair:186
+Shape:YandereChan:Face_Smile:100
+Shape:YandereChan:Face_Insanity:60
+Shape:YandereChan:EyeType_Thin:100
+Shape:YandereChan:Face_Sad:48
+
+OpenTexture:PosemodChan.png
+Texture:2:YandereChan
+
+if:exists:Student_49 (Mina Rai)
+jmp:AddAnims
+end
+
+lbl:AddAnims
+YanAddNew2:Student_49 (Mina Rai)/Character
+<YandereScript>:YandereChan:Set:CrouchIdleAnim:string:f02_sit_05
+// <YandereScript>:YandereChan:Set:CrouchIdleAnim:string:f02_sit_06

@@ -1,0 +1,538 @@
+if:Active:Tutorial
+jmp:TutorialActive
+jmp:TutorialNotActive
+
+lbl:TutorialNotActive
+SpawnStudent:1:Taro Yamada
+SpawnStudent:1:Jokichi Yudasei
+ActivateChildAll:YandereChan:DelinquentSurgeonMask:true
+ActivateChildAll:YandereChan:Bandana:true
+ActivateChildAll:YandereChan:Scouter:true
+RefLocalPosition:DelinquentSurgeonMask:0:0.003:0.074
+RefScale:DelinquentSurgeonMask:1.1:1.1:1.1
+RefScale:YandereChan/Character/PelvisRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/Bandana:1.1:1.1:1.1
+RefLocalPosition:YandereChan/Character/PelvisRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/Bandana:0:-1.7:0.024
+RefScale:YandereChan/Character/PelvisRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/Scouter:1.1:1.1:1.1
+RefLocalPosition:YandereChan/Character/PelvisRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/Scouter:0:-1.583:0.019
+ActivateChildAll:YandereChan:DelinquentSurgeonMask:false
+ActivateChildAll:YandereChan:Bandana:false
+ActivateChildAll:YandereChan:Scouter:false
+<YandereScript>:YandereChan:Call:ClubAccessory
+EnableGameObject:Student_1 (Taro Yamada):true
+EnableGameObject:Student_1 (Jokichi Yudasei):true
+RefLocalPosition:YandereChan/Character/PelvisRoot/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightArmRoll/RightForeArm/RightForeArmRoll/RightHand/RightHanditem_Null/NormalPhoneParent/Smartphone:-0.02:-0.005:0
+RenameRef:Student_1 (Jokichi Yudasei):Student_1 (Taro Yamada)
+ChangeYanName:Taro
+Destroy:TaroHair
+DestroyYanPantys
+Prompt.enabled:YandereShoePrompt:false
+OneFrame:true
+SetEditObject:YandereChan
+YanAddNew
+RefScale:YandereChan/Character:0.94:0.94:0.94
+Activate:YandereChan/Character/f02:false
+YanHair:0
+HairToYan2:MaleHair0:TaroHair
+HairToYan2:MaleHair0:TaroHairRaincoat
+RendererColor2:TaroHair:0:1:1:1
+RendererColor2:TaroHairRaincoat:0:1:1:1
+
+LayerToYan2:TaroHair
+LayerToYan2:TaroHairRaincoat
+
+ChangeShoes:Student_1 (Taro Yamada)
+Duplicate:Student_1 (Taro Yamada):MaleBase
+CharacterAddAnimations:PoseMod/Bundles/malee.bundle:MaleBase
+AddAnimationsFrom:MaleBase:<0>
+Destroy:MaleBase/Character/PelvisRoot/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightArmRoll/RightForeArm/RightForeArmRoll/RightHand/RightHanditem_Null/Book
+Destroy:MaleBase/Character/PelvisRoot/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftArmRoll/LeftForeArm/LeftForeArmRoll/LeftHand/LeftHanditem_Null/EventBook
+OneFrame:false
+SetStudentFaceTexture:MaleBase:PoseMod/Cutscenes/Taro/Textures/TaroHair.png
+OneFrame:true
+RiggedAccessoryAttacher:<0>:MaleBase:MaleBase/Character/m01/m01_schoolwear_000_h
+OneFrame:false
+RenameRefChild:YandereChan:m01_schoolwear_000_h:SchoolUniform
+Destroy:MaleBase
+OneFrame:true
+
+if:StudUniform:Student_1 (Taro Yamada):1
+jmp:Uniform1
+jmp:Uniform2Check
+
+lbl:Uniform1
+OpenTexture:PoseMod/Cutscenes/Taro/Textures/Uniform1.png
+Texture3:0:YandereChan/SchoolUniform
+jmp:ContinueCommands
+
+lbl:Uniform2Check
+if:StudUniform:Student_1 (Taro Yamada):2
+jmp:Uniform2
+jmp:Uniform3Check
+
+lbl:Uniform2
+OpenTexture:PoseMod/Cutscenes/Taro/Textures/Uniform2.png
+Texture3:2:YandereChan/SchoolUniform
+jmp:ContinueCommands
+
+lbl:Uniform3Check
+if:StudUniform:Student_1 (Taro Yamada):3
+jmp:Uniform3
+jmp:Uniform4Check
+
+lbl:Uniform3
+OpenTexture:PoseMod/Cutscenes/Taro/Textures/Uniform3.png
+Texture3:2:YandereChan/SchoolUniform
+jmp:ContinueCommands
+
+lbl:Uniform4Check
+if:StudUniform:Student_1 (Taro Yamada):4
+jmp:Uniform4
+jmp:ContinueCommands
+
+lbl:Uniform4
+OpenTexture:PoseMod/Cutscenes/Taro/Textures/Uniform4.png
+Texture3:1:YandereChan/SchoolUniform
+jmp:ContinueCommands
+
+lbl:ContinueCommands
+-----------------------------------------------------------------------------
+AssetBundle.CreateFromFile:PoseMod/Bundles/maleclothings.unity3d
+AssetBundle.LoadAsync:MaleClothings
+AssetBundle.Unload
+NewAsset:MaleClothingsNew
+
+ChangeMaterialShader.ThroughFind:MaleClothingsNew/m01_eyes_00_h/m01_eyes_00_h:0:Toon/Lighted Outline
+
+ChangeMaterialShader.ThroughFind:MaleClothingsNew/m01_apron_00_h_bald/m01_apron_00_h:0:Toon/Lighted Outline
+ChangeMaterialShader.ThroughFind:MaleClothingsNew/m01_apron_00_h_bald/m01_apron_00_h:1:Toon/Lighted Outline
+ChangeMaterialShader.ThroughFind:MaleClothingsNew/m01_apron_00_h_bald/m01_apron_00_h:2:Toon/Lighted Outline
+
+ChangeMaterialShader.ThroughFind:MaleSwimsuit/m01_swimwear_00_h:0:Toon/Lighted Outline
+ChangeMaterialShader.ThroughFind:MaleSwimsuit/m01_swimwear_00_h:1:Toon/Lighted Outline
+ChangeMaterialShader.ThroughFind:MaleSwimsuit/m01_swimwear_00_h:2:Toon/Lighted Outline
+
+ChangeMaterialShader.ThroughFind:MaleMartialUniform/m01_uniform_00_gi_bald:0:Toon/Lighted Outline
+ChangeMaterialShader.ThroughFind:MaleMartialUniform/m01_uniform_00_gi_bald:1:Toon/Lighted Outline
+
+ChangeMaterialShader.ThroughFind:MaleGymUniform/MaleGymUniform:0:Toon/Lighted Outline
+ChangeMaterialShader.ThroughFind:MaleGymUniform/MaleGymUniform:1:Toon/Lighted Outline
+ChangeMaterialShader.ThroughFind:MaleGymUniform/MaleGymUniform:2:Toon/Lighted Outline
+
+ChangeMaterialShader.ThroughFind:MaleTowel/m01_bathtowel_00_h:0:Toon/Lighted Outline
+ChangeMaterialShader.ThroughFind:MaleTowel/m01_bathtowel_00_h:1:Toon/Lighted Outline
+ChangeMaterialShader.ThroughFind:MaleTowel/m01_bathtowel_00_h:2:Toon/Lighted Outline
+
+ChangeMaterialShader.ThroughFind:MaleFaceAndHands/MaleFaceAndHands:0:Toon/Lighted Outline
+ChangeMaterialShader.ThroughFind:MaleFaceAndHands/MaleFaceAndHands:1:Toon/Lighted Outline
+
+ChangeMaterialShader.ThroughFind:MaleRaincoatLegsAndHead/MaleRaincoatLegsAndHead:0:Toon/Lighted Outline
+ChangeMaterialShader.ThroughFind:MaleRaincoatLegsAndHead/MaleRaincoatLegsAndHead:1:Toon/Lighted Outline
+
+RenameRefChild:RaincoatRIG:LeftBreastRENAMED:LeftBreast
+RenameRefChild:RaincoatRIG:RightBreastRENAMED:RightBreast
+
+RiggedAccessoryAttacher:YandereChan:MaleClothingsNew/MaleSwimsuit:MaleSwimsuit/m01_swimwear_00_h
+RiggedAccessoryAttacher:YandereChan:MaleClothingsNew/MaleGymUniform:MaleClothingsNew/MaleGymUniform/MaleGymUniform
+RiggedAccessoryAttacher:YandereChan:MaleClothingsNew/MaleTowel:MaleTowel/m01_bathtowel_00_h
+RiggedAccessoryAttacher:YandereChan:LabcoatMale:LabcoatMaleBase
+RiggedAccessoryAttacher:YandereChan:MaleClothingsNew/MaleFaceAndHands:MaleFaceAndHands/MaleFaceAndHands
+RiggedAccessoryAttacher:YandereChan:MaleClothingsNew/MaleMartialUniform:MaleClothingsNew/MaleMartialUniform/m01_uniform_00_gi_bald
+RiggedAccessoryAttacher:YandereChan:RaincoatRIG:polySurface23
+RiggedAccessoryAttacher:YandereChan:MaleClothingsNew/MaleRaincoatLegsAndHead:MaleClothingsNew/MaleRaincoatLegsAndHead/MaleRaincoatLegsAndHead
+RiggedAccessoryAttacher:YandereChan:MaleClothingsNew/m01_eyes_00_h:m01_eyes_00_h/m01_eyes_00_h
+RiggedAccessoryAttacher:YandereChan:MaleClothingsNew/m01_apron_00_h_bald:m01_apron_00_h_bald/m01_apron_00_h
+
+OneFrame:false
+RendererColor2:YandereChan/polySurface23:0:1:1:1
+OpenTexture:PoseMod/Cutscenes/Taro/Textures/Raincoat.png
+Texture3:0:YandereChan/polySurface23
+OneFrame:true
+
+if:blonde
+jmp:YanBlonde
+jmp:YanNotBlonde
+
+lbl:YanBlonde
+OpenTexture:PoseMod/Cutscenes/Taro/Textures/TaroHairFair.png
+Texture3:0:TaroHair
+Texture3:0:TaroHairRaincoat
+jmp:YanBlondeContinue
+
+lbl:YanNotBlonde
+OpenTexture:PoseMod/Cutscenes/Taro/Textures/TaroHair.png
+Texture3:0:TaroHair
+Texture3:0:TaroHairRaincoat
+OneFrame:false
+
+lbl:YanBlondeContinue
+OneFrame:false
+OpenTexture:PoseMod/Cutscenes/Taro/Textures/TaroHair.png
+Texture3:0:YandereChan/m01_bathtowel_00_h
+Texture3:0:YandereChan/m01_swimwear_00_h
+Texture3:0:YandereChan/MaleFaceAndHands
+Texture3:0:YandereChan/MaleGymUniform
+Texture3:0:YandereChan/MaleRaincoatLegsAndHead
+Texture3:1:YandereChan/m01_uniform_00_gi_bald
+Texture3:0:YandereChan/m01_eyes_00_h
+Texture3:2:YandereChan/m01_apron_00_h
+OpenTexture:PoseMod/Cutscenes/Taro/Textures/m01_naked_00_h.png
+Texture3:1:YandereChan/m01_bathtowel_00_h
+Texture3:1:YandereChan/MaleFaceAndHands
+Texture3:2:YandereChan/MaleGymUniform
+Texture3:1:YandereChan/MaleRaincoatLegsAndHead
+Texture3:1:YandereChan/m01_apron_00_h
+OpenTexture:PoseMod/Cutscenes/Taro/Textures/m01_swimwear_00_h.png
+Texture3:1:YandereChan/m01_swimwear_00_h
+Texture3:2:YandereChan/m01_swimwear_00_h
+OpenTexture:PoseMod/Cutscenes/Taro/Textures/m01_uniform_00_gi.png
+Texture3:0:YandereChan/m01_uniform_00_gi_bald
+OpenTexture:PoseMod/Cutscenes/Taro/Textures/m01_apron_00_h.png
+Texture3:0:YandereChan/m01_apron_00_h
+
+<YandereScript>:<0>:ArraySet:Hairstyles:1:GameObject:TaroHair
+<YandereScript>:<0>:ArraySet:Hairstyles:200:GameObject:TaroHairRaincoat
+
+if:eighties
+jmp:eightiesgym
+jmp:continue
+
+lbl:eightiesgym
+OpenTexture:PoseMod/Cutscenes/Taro/Textures/RedGymMaleUniformTex.png
+Texture3:1:YandereChan/MaleGymUniform
+jmp:continue
+
+lbl:continue
+ActivateChildAll:YandereChan:SchoolUniform:true
+ActivateChildAll:YandereChan:m01_swimwear_00_h:false
+ActivateChildAll:YandereChan:MaleGymUniform:false
+ActivateChildAll:YandereChan:m01_bathtowel_00_h:false
+ActivateChildAll:YandereChan:LabcoatMaleBase:false
+ActivateChildAll:YandereChan:MaleFaceAndHands:false
+ActivateChildAll:YandereChan:m01_uniform_00_gi_bald:false
+ActivateChildAll:YandereChan:polySurface23:false
+ActivateChildAll:YandereChan:MaleRaincoatLegsAndHead:false
+ActivateChildAll:YandereChan:m01_eyes_00_h:false
+ActivateChildAll:YandereChan:m01_apron_00_h:false
+------------------------------------------------------------
+OneFrame:true
+
+YandereAnimation.Layer:maleposition 1:990
+YanPlayExistingAnimation:maleposition 1
+YanHair:1
+YanReplaceAnim:f02_idleShort_00:idleShort_00
+YanReplaceAnim:f02_newWalk_00:newWalk_00
+YanReplaceAnim:f02_ryobaIdle_00:idleShort_00
+YanReplaceAnim:f02_ryobaWalk_00:newWalk_00
+YanReplaceAnim:f02_newSprint_00:trackJog_00
+YanReplaceAnim:f02_ryobaRun_00:trackJog_00
+YanReplaceAnim:f02_shoveA_01:dodge_00
+YanReplaceAnim:f02_down_22:down_22
+YanReplaceAnim:f02_handcuffs_00:handcuffs_00
+YanReplaceAnim:f02_scaredIdle_00:scaredIdle_00
+YanReplaceAnim:f02_scaredIdle_01:scaredIdle_01
+YanReplaceAnim:f02_idleChill_00:idleChill_00
+YanReplaceAnim:f02_walkChill_00:walkChill_00
+YanReplaceAnim:f02_idleConfident_00:idleConfident_00
+YanReplaceAnim:f02_walkConfident_00:walkConfident_00
+YanReplaceAnim:f02_idleHaughty_00:idleHaughty_00
+YanReplaceAnim:f02_walkHaughty_00:walkHaughty_00
+YanReplaceAnim:f02_idleScholarly_00:idleScholarly_00
+YanReplaceAnim:f02_walkScholarly_00:walkScholarly_00
+YanReplaceAnim:f02_idleShy_00:bulliedIdle_00
+YanReplaceAnim:f02_walkShy_00:bulliedWalk_00
+YanReplaceAnim:f02_idleTough_00:idleTough_00
+YanReplaceAnim:f02_walkTough_00:walkTough_00
+YanReplaceAnim:f02_idleInjured_00:idleInjured_00
+YanReplaceAnim:f02_walkInjured_00:walkInjured_00
+YanReplaceAnim:f02_wink_00:wink_00
+YanReplaceAnim:f02_embar_00:embar_00
+YanReplaceAnim:f02_embar_01:embar_01
+YanReplaceAnim:f02_readyToFight_00:readyToFight_00
+YanReplaceAnim:Yandere_CombatIdle:delinquentCombatIdle_00
+YanReplaceAnim:f02_nod_00:nod_00
+YanReplaceAnim:f02_nod_01:nod_01
+YanReplaceAnim:f02_lookdown_00:lookdown_00
+YanReplaceAnim:f02_knifeLowSanityB_00:knifeLowSanityB_00
+YanReplaceAnim:f02_greet_00:greet_00
+YanReplaceAnim:f02_greet_01:greet_01
+YanReplaceAnim:f02_swingB_00:swingB_00
+YanReplaceAnim:f02_prepareFingerFood_00:prepareFingerFood_00
+YanReplaceAnim:f02_sewing_00:sewing_00
+YanReplaceAnim:f02_delinquentGesture_01:delinquentTalk_03
+YanReplaceAnim:f02_playingGames_00:playingGames_00
+YanReplaceAnim:f02_kick_23:kick_23
+YanReplaceAnim:f02_sit_00:sit_00
+OneFrame:false
+Anim.wrap:YandereChan/Character:phoneText_00:2
+<YandereScript>:YandereChan:Call:SetAnimationLayers
+Destroy:MaleClothings
+Destroy:MaleClothingsNew
+end
+
+lbl:TutorialActive
+SpawnStudent:1:Taro Yamada
+SpawnStudent:1:Jokichi Yudasei
+ActivateChildAll:YandereChan:DelinquentSurgeonMask:true
+ActivateChildAll:YandereChan:Bandana:true
+ActivateChildAll:YandereChan:Scouter:true
+RefLocalPosition:DelinquentSurgeonMask:0:0.003:0.074
+RefScale:DelinquentSurgeonMask:1.1:1.1:1.1
+RefScale:YandereChan/Character/PelvisRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/Bandana:1.1:1.1:1.1
+RefLocalPosition:YandereChan/Character/PelvisRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/Bandana:0:-1.7:0.024
+RefScale:YandereChan/Character/PelvisRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/Scouter:1.1:1.1:1.1
+RefLocalPosition:YandereChan/Character/PelvisRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/Scouter:0:-1.583:0.019
+ActivateChildAll:YandereChan:DelinquentSurgeonMask:false
+ActivateChildAll:YandereChan:Bandana:false
+ActivateChildAll:YandereChan:Scouter:false
+<YandereScript>:YandereChan:Call:ClubAccessory
+EnableGameObject:Student_1 (Taro Yamada):true
+EnableGameObject:Student_1 (Jokichi Yudasei):true
+RefLocalPosition:YandereChan/Character/PelvisRoot/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightArmRoll/RightForeArm/RightForeArmRoll/RightHand/RightHanditem_Null/NormalPhoneParent/Smartphone:-0.02:-0.005:0
+RenameRef:Student_1 (Jokichi Yudasei):Student_1 (Taro Yamada)
+ChangeYanName:Taro
+Destroy:TaroHair
+DestroyYanPantys
+Prompt.enabled:YandereShoePrompt:false
+OneFrame:true
+SetEditObject:YandereChan
+YanAddNew
+RefScale:YandereChan/Character:0.94:0.94:0.94
+Activate:YandereChan/Character/f02:false
+YanHair:0
+HairToYan2:MaleHair0:TaroHair
+HairToYan2:MaleHair0:TaroHairRaincoat
+RendererColor2:TaroHair:0:1:1:1
+RendererColor2:TaroHairRaincoat:0:1:1:1
+
+LayerToYan2:TaroHair
+LayerToYan2:TaroHairRaincoat
+
+ChangeShoes:Student_1 (Taro Yamada)
+Duplicate:Student_1 (Taro Yamada):MaleBase
+CharacterAddAnimations:PoseMod/Bundles/malee.bundle:MaleBase
+AddAnimationsFrom:MaleBase:<0>
+Destroy:MaleBase/Character/PelvisRoot/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightArmRoll/RightForeArm/RightForeArmRoll/RightHand/RightHanditem_Null/Book
+Destroy:MaleBase/Character/PelvisRoot/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftArmRoll/LeftForeArm/LeftForeArmRoll/LeftHand/LeftHanditem_Null/EventBook
+OneFrame:false
+SetStudentFaceTexture:MaleBase:PoseMod/Cutscenes/Taro/Textures/TaroHair.png
+OneFrame:true
+RiggedAccessoryAttacher:<0>:MaleBase:MaleBase/Character/m01/m01_schoolwear_000_h
+OneFrame:false
+RenameRefChild:YandereChan:m01_schoolwear_000_h:SchoolUniform
+Destroy:MaleBase
+OneFrame:true
+
+if:StudUniform:Student_1 (Taro Yamada):1
+jmp:Uniform12
+jmp:Uniform2Check2
+
+lbl:Uniform12
+OpenTexture:PoseMod/Cutscenes/Taro/Textures/Uniform1.png
+Texture3:0:YandereChan/SchoolUniform
+jmp:ContinueCommands2
+
+lbl:Uniform2Check2
+if:StudUniform:Student_1 (Taro Yamada):2
+jmp:Uniform22
+jmp:Uniform3Check2
+
+lbl:Uniform22
+OpenTexture:PoseMod/Cutscenes/Taro/Textures/Uniform2.png
+Texture3:2:YandereChan/SchoolUniform
+jmp:ContinueCommands2
+
+lbl:Uniform3Check2
+if:StudUniform:Student_1 (Taro Yamada):3
+jmp:Uniform32
+jmp:Uniform4Check2
+
+lbl:Uniform32
+OpenTexture:PoseMod/Cutscenes/Taro/Textures/Uniform3.png
+Texture3:2:YandereChan/SchoolUniform
+jmp:ContinueCommands2
+
+lbl:Uniform4Check2
+if:StudUniform:Student_1 (Taro Yamada):4
+jmp:Uniform42
+jmp:ContinueCommands2
+
+lbl:Uniform42
+OpenTexture:PoseMod/Cutscenes/Taro/Textures/Uniform4.png
+Texture3:1:YandereChan/SchoolUniform
+jmp:ContinueCommands2
+
+lbl:ContinueCommands2
+-----------------------------------------------------------------------------
+AssetBundle.CreateFromFile:PoseMod/Bundles/maleclothings.unity3d
+AssetBundle.LoadAsync:MaleClothings
+AssetBundle.Unload
+NewAsset:MaleClothingsNew
+
+ChangeMaterialShader.ThroughFind:MaleClothingsNew/m01_eyes_00_h/m01_eyes_00_h:0:Toon/Lighted Outline
+
+ChangeMaterialShader.ThroughFind:MaleClothingsNew/m01_apron_00_h_bald/m01_apron_00_h:0:Toon/Lighted Outline
+ChangeMaterialShader.ThroughFind:MaleClothingsNew/m01_apron_00_h_bald/m01_apron_00_h:1:Toon/Lighted Outline
+ChangeMaterialShader.ThroughFind:MaleClothingsNew/m01_apron_00_h_bald/m01_apron_00_h:2:Toon/Lighted Outline
+
+ChangeMaterialShader.ThroughFind:MaleSwimsuit/m01_swimwear_00_h:0:Toon/Lighted Outline
+ChangeMaterialShader.ThroughFind:MaleSwimsuit/m01_swimwear_00_h:1:Toon/Lighted Outline
+ChangeMaterialShader.ThroughFind:MaleSwimsuit/m01_swimwear_00_h:2:Toon/Lighted Outline
+
+ChangeMaterialShader.ThroughFind:MaleMartialUniform/m01_uniform_00_gi_bald:0:Toon/Lighted Outline
+ChangeMaterialShader.ThroughFind:MaleMartialUniform/m01_uniform_00_gi_bald:1:Toon/Lighted Outline
+
+ChangeMaterialShader.ThroughFind:MaleGymUniform/MaleGymUniform:0:Toon/Lighted Outline
+ChangeMaterialShader.ThroughFind:MaleGymUniform/MaleGymUniform:1:Toon/Lighted Outline
+ChangeMaterialShader.ThroughFind:MaleGymUniform/MaleGymUniform:2:Toon/Lighted Outline
+
+ChangeMaterialShader.ThroughFind:MaleTowel/m01_bathtowel_00_h:0:Toon/Lighted Outline
+ChangeMaterialShader.ThroughFind:MaleTowel/m01_bathtowel_00_h:1:Toon/Lighted Outline
+ChangeMaterialShader.ThroughFind:MaleTowel/m01_bathtowel_00_h:2:Toon/Lighted Outline
+
+ChangeMaterialShader.ThroughFind:MaleFaceAndHands/MaleFaceAndHands:0:Toon/Lighted Outline
+ChangeMaterialShader.ThroughFind:MaleFaceAndHands/MaleFaceAndHands:1:Toon/Lighted Outline
+
+ChangeMaterialShader.ThroughFind:MaleRaincoatLegsAndHead/MaleRaincoatLegsAndHead:0:Toon/Lighted Outline
+ChangeMaterialShader.ThroughFind:MaleRaincoatLegsAndHead/MaleRaincoatLegsAndHead:1:Toon/Lighted Outline
+
+RenameRefChild:RaincoatRIG:LeftBreastRENAMED:LeftBreast
+RenameRefChild:RaincoatRIG:RightBreastRENAMED:RightBreast
+
+RiggedAccessoryAttacher:YandereChan:MaleClothingsNew/MaleSwimsuit:MaleSwimsuit/m01_swimwear_00_h
+RiggedAccessoryAttacher:YandereChan:MaleClothingsNew/MaleGymUniform:MaleClothingsNew/MaleGymUniform/MaleGymUniform
+RiggedAccessoryAttacher:YandereChan:MaleClothingsNew/MaleTowel:MaleTowel/m01_bathtowel_00_h
+RiggedAccessoryAttacher:YandereChan:LabcoatMale:LabcoatMaleBase
+RiggedAccessoryAttacher:YandereChan:MaleClothingsNew/MaleFaceAndHands:MaleFaceAndHands/MaleFaceAndHands
+RiggedAccessoryAttacher:YandereChan:MaleClothingsNew/MaleMartialUniform:MaleClothingsNew/MaleMartialUniform/m01_uniform_00_gi_bald
+RiggedAccessoryAttacher:YandereChan:RaincoatRIG:polySurface23
+RiggedAccessoryAttacher:YandereChan:MaleClothingsNew/MaleRaincoatLegsAndHead:MaleClothingsNew/MaleRaincoatLegsAndHead/MaleRaincoatLegsAndHead
+RiggedAccessoryAttacher:YandereChan:MaleClothingsNew/m01_eyes_00_h:m01_eyes_00_h/m01_eyes_00_h
+RiggedAccessoryAttacher:YandereChan:MaleClothingsNew/m01_apron_00_h_bald:m01_apron_00_h_bald/m01_apron_00_h
+
+OneFrame:false
+RendererColor2:YandereChan/polySurface23:0:1:1:1
+OpenTexture:PoseMod/Cutscenes/Taro/Textures/Raincoat.png
+Texture3:0:YandereChan/polySurface23
+OneFrame:true
+
+if:blonde
+jmp:YanBlonde2
+jmp:YanNotBlonde2
+
+lbl:YanBlonde2
+OpenTexture:PoseMod/Cutscenes/Taro/Textures/TaroHairFair.png
+Texture3:0:TaroHair
+Texture3:0:TaroHairRaincoat
+jmp:YanBlondeContinue2
+
+lbl:YanNotBlonde2
+OpenTexture:PoseMod/Cutscenes/Taro/Textures/TaroHair.png
+Texture3:0:TaroHair
+Texture3:0:TaroHairRaincoat
+OneFrame:false
+
+lbl:YanBlondeContinue2
+OneFrame:false
+OpenTexture:PoseMod/Cutscenes/Taro/Textures/TaroHair.png
+Texture3:0:YandereChan/m01_bathtowel_00_h
+Texture3:0:YandereChan/m01_swimwear_00_h
+Texture3:0:YandereChan/MaleFaceAndHands
+Texture3:0:YandereChan/MaleGymUniform
+Texture3:0:YandereChan/MaleRaincoatLegsAndHead
+Texture3:1:YandereChan/m01_uniform_00_gi_bald
+Texture3:0:YandereChan/m01_eyes_00_h
+Texture3:2:YandereChan/m01_apron_00_h
+OpenTexture:PoseMod/Cutscenes/Taro/Textures/m01_naked_00_h.png
+Texture3:1:YandereChan/m01_bathtowel_00_h
+Texture3:1:YandereChan/MaleFaceAndHands
+Texture3:2:YandereChan/MaleGymUniform
+Texture3:1:YandereChan/MaleRaincoatLegsAndHead
+Texture3:1:YandereChan/m01_apron_00_h
+OpenTexture:PoseMod/Cutscenes/Taro/Textures/m01_swimwear_00_h.png
+Texture3:1:YandereChan/m01_swimwear_00_h
+Texture3:2:YandereChan/m01_swimwear_00_h
+OpenTexture:PoseMod/Cutscenes/Taro/Textures/m01_uniform_00_gi.png
+Texture3:0:YandereChan/m01_uniform_00_gi_bald
+OpenTexture:PoseMod/Cutscenes/Taro/Textures/m01_apron_00_h.png
+Texture3:0:YandereChan/m01_apron_00_h
+
+<YandereScript>:<0>:ArraySet:Hairstyles:1:GameObject:TaroHair
+<YandereScript>:<0>:ArraySet:Hairstyles:200:GameObject:TaroHairRaincoat
+
+if:eighties
+jmp:eightiesgym2
+jmp:continue2
+
+lbl:eightiesgym2
+OpenTexture:PoseMod/Cutscenes/Taro/Textures/RedGymMaleUniformTex.png
+Texture3:1:YandereChan/MaleGymUniform
+jmp:continue2
+
+lbl:continue2
+ActivateChildAll:YandereChan:SchoolUniform:true
+ActivateChildAll:YandereChan:m01_swimwear_00_h:false
+ActivateChildAll:YandereChan:MaleGymUniform:false
+ActivateChildAll:YandereChan:m01_bathtowel_00_h:false
+ActivateChildAll:YandereChan:LabcoatMaleBase:false
+ActivateChildAll:YandereChan:MaleFaceAndHands:false
+ActivateChildAll:YandereChan:m01_uniform_00_gi_bald:false
+ActivateChildAll:YandereChan:polySurface23:false
+ActivateChildAll:YandereChan:MaleRaincoatLegsAndHead:false
+ActivateChildAll:YandereChan:m01_eyes_00_h:false
+ActivateChildAll:YandereChan:m01_apron_00_h:false
+------------------------------------------------------------
+OneFrame:true
+
+YandereAnimation.Layer:maleposition 1:990
+YanPlayExistingAnimation:maleposition 1
+YanHair:1
+YanReplaceAnim:f02_idleShort_00:idleShort_00
+YanReplaceAnim:f02_newWalk_00:newWalk_00
+YanReplaceAnim:f02_ryobaIdle_00:idleShort_00
+YanReplaceAnim:f02_ryobaWalk_00:newWalk_00
+YanReplaceAnim:f02_newSprint_00:trackJog_00
+YanReplaceAnim:f02_ryobaRun_00:trackJog_00
+YanReplaceAnim:f02_shoveA_01:dodge_00
+YanReplaceAnim:f02_down_22:down_22
+YanReplaceAnim:f02_handcuffs_00:handcuffs_00
+YanReplaceAnim:f02_scaredIdle_00:scaredIdle_00
+YanReplaceAnim:f02_scaredIdle_01:scaredIdle_01
+YanReplaceAnim:f02_idleChill_00:idleChill_00
+YanReplaceAnim:f02_walkChill_00:walkChill_00
+YanReplaceAnim:f02_idleConfident_00:idleConfident_00
+YanReplaceAnim:f02_walkConfident_00:walkConfident_00
+YanReplaceAnim:f02_idleHaughty_00:idleHaughty_00
+YanReplaceAnim:f02_walkHaughty_00:walkHaughty_00
+YanReplaceAnim:f02_idleScholarly_00:idleScholarly_00
+YanReplaceAnim:f02_walkScholarly_00:walkScholarly_00
+YanReplaceAnim:f02_idleShy_00:bulliedIdle_00
+YanReplaceAnim:f02_walkShy_00:bulliedWalk_00
+YanReplaceAnim:f02_idleTough_00:idleTough_00
+YanReplaceAnim:f02_walkTough_00:walkTough_00
+YanReplaceAnim:f02_idleInjured_00:idleInjured_00
+YanReplaceAnim:f02_walkInjured_00:walkInjured_00
+YanReplaceAnim:f02_wink_00:wink_00
+YanReplaceAnim:f02_embar_00:embar_00
+YanReplaceAnim:f02_embar_01:embar_01
+YanReplaceAnim:f02_readyToFight_00:readyToFight_00
+YanReplaceAnim:Yandere_CombatIdle:delinquentCombatIdle_00
+YanReplaceAnim:f02_nod_00:nod_00
+YanReplaceAnim:f02_nod_01:nod_01
+YanReplaceAnim:f02_lookdown_00:lookdown_00
+YanReplaceAnim:f02_knifeLowSanityB_00:knifeLowSanityB_00
+YanReplaceAnim:f02_greet_00:greet_00
+YanReplaceAnim:f02_greet_01:greet_01
+YanReplaceAnim:f02_swingB_00:swingB_00
+YanReplaceAnim:f02_prepareFingerFood_00:prepareFingerFood_00
+YanReplaceAnim:f02_sewing_00:sewing_00
+YanReplaceAnim:f02_delinquentGesture_01:delinquentTalk_03
+YanReplaceAnim:f02_playingGames_00:playingGames_00
+YanReplaceAnim:f02_kick_23:kick_23
+YanReplaceAnim:f02_sit_00:sit_00
+OneFrame:false
+<YandereScript>:YandereChan:Call:SetAnimationLayers
+Destroy:MaleClothings
+Destroy:MaleClothingsNew
+Pathfinding.Enabled:Student_1 (Taro Yamada):false
+RefPosition:Student_1 (Taro Yamada):0:-10:0
+EnableGameObject:Student_1 (Taro Yamada):false

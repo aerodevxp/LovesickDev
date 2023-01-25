@@ -1,0 +1,6 @@
+
+UILabelText:CrashLabel:If you have any doubts about the commands you can find them written on mega!
+UILabelText:Label:Please waits. The game is loading...
+
+Example cutscene created by ShaxOfficial#3164
+Yt channel: https://www.youtube.com/channel/UCfsEeuNIUnjnJzVVrvQtfkg

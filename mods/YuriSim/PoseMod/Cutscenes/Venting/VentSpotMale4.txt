@@ -1,0 +1,10 @@
+Destroy:KEY1
+Destroy:KEY2
+Destroy:KEY3
+Fade:0,0,0,1:1
+Wait:1
+RefLocalPosition:YandereChan:-24.9:0:-37.2
+RefLocalRotation:YandereChan:0:180:0
+Wait:1
+YanCanMove:true
+Fade:0,0,0,0:1

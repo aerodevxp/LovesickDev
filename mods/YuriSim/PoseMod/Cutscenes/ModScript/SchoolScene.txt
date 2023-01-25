@@ -1,0 +1,1 @@
+startcutscene:yuri.txt

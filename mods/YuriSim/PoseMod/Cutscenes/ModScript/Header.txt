@@ -1,0 +1,22 @@
+
+{SetTexture}:arg1:arg2
+OpenTexture:arg1
+Texture:0:arg2
+Texture:1:arg2
+#end
+
+/this already exists as a command
+/{LoadFromBundle}:arg1_filename:arg2_objectname:arg3_newobject
+/AssetBundle.CreateFromFile:PoseMod/Bundles/arg1_filename.bundle
+/AssetBundle.loadasync:arg2_objectname
+/newasset:arg3_newobject
+/assetbundle__unload
+/#end
+
+
+{FixShader}:arg_material:arg_objectname
+ChangeMaterialShader.Throughfind:arg_objectname:arg_material:Toon/Basic Outline
+ChangeShaderFloat.Throughfind:arg_objectname:arg_material:_Outline:0.002
+#end
+
+

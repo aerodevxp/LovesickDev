@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "5dfb4325-a7d1-4e2a-82b2-0edeb448fcf3": {
+      "ProjectGuid": "5dfb4325-a7d1-4e2a-82b2-0edeb448fcf3",
+      "DisplayName": "yiOS",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 1
+}

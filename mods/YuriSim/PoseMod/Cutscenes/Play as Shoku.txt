@@ -1,0 +1,33 @@
+SetEditObject:YandereChan
+DestroyYanPantys
+Activate:YandereChan/Character/f02:false
+YanHair:0
+DeliYanHair:CookingClubHair1
+LayerToYan2:CookingClubHair1
+
+RenameRef:Student_1 (Jokichi Yudasei):Student_1 (Taro Yamada)
+CharacterAddAnimations:PoseMod/bundles/malee.bundle:Student_1 (Taro Yamada)
+AddAnimationsFrom:Student_1 (Taro Yamada):<0>
+RiggedAccessoryAttacher:<0>:Student_1 (Taro Yamada):Student_1 (Taro Yamada)/Character/m01/m01_schoolwear_000_h
+RiggedAccessoryAttacher:<0>:MaleCookingApron:MaleCookingApron/apronMale_Mesh
+[coooktex]:<SkinnedMeshRenderer>:Student_21 (Shoku Tsuburaya)/Character/m01/m01_schoolwear_000_h:materials
+<SkinnedMeshRenderer>:YandereChan/m01_schoolwear_000_h:Set:materials:[coooktex]
+[aprontex]:<SkinnedMeshRenderer>:Student_21 (Shoku Tsuburaya)/Character/PelvisRoot/apronMale_Mesh:materials
+<SkinnedMeshRenderer>:YandereChan/apronMale_Mesh:Set:materials:[aprontex]
+
+Duplicate:Student_21 (Shoku Tsuburaya)/Character/PelvisRoot/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/Armband:YanArmband
+Attach:YanArmband:YandereChan/Character/PelvisRoot/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm
+RefLocalPosition:YandereChan/Character/PelvisRoot/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/YanArmband:-0.1:-0.01:0.012
+RefLocalRotation3:YandereChan/Character/PelvisRoot/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/YanArmband:0:0:0
+LayerToYan2:YanArmband
+
+<YandereScript>:<0>:ArraySet:Hairstyles:1:GameObject:CookingClubHair1
+DeliYanHair:CookingClubAcc1
+LayerToYan2:CookingClubAcc1
+
+YandereAnimation.Layer:maleposition 1:990
+YanPlayExistingAnimation:maleposition 1
+YanHair:1
+YanSetIdleAnim:idle_01
+YanSetWalkAnim:newWalk_00
+YanSetRunAnim:newSprint_00

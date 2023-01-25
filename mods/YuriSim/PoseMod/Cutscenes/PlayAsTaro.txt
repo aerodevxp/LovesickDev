@@ -1,0 +1,13 @@
+StartCutscene:Taro/Taro
+StartCutscene:Taro/TaroGym
+StartCutscene:Taro/TaroUniform
+StartCutscene:Taro/TaroSwimswear
+StartCutscene:Taro/TaroTowel
+StartCutscene:Taro/TaroLabcoat
+StartCutscene:Taro/TaroPainterSmock
+StartCutscene:Taro/TaroMartialUniform
+StartCutscene:Taro/TaroRaincoat
+
+//Credits to Cagkan2021 for the cutscenes, loomnoob for the malee bundle! Some commands are taken from the play as shoku example cutscene.
+//Also you can use these Taro cutscenes to make your own male OC! :D
+//Do not delete the malee bundle and the maleclothings bundle and also the Taro folder if you want this cutscene to run

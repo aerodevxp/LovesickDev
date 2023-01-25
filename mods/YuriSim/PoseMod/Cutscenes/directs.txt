@@ -1,0 +1,50 @@
+
+/Yanderechan has a variable called "Egg"
+/which has the value True if any easteregg is activated
+/and has the value False if no easteregg is activated
+
+
+/Here we create a variable called [EasterEggActive]
+/and we set it to a True or False value from Yanderechan's "Egg" variable
+[EasterEggActive]:<YandereScript>:YandereChan:Egg
+
+/now we check if it's True
+if:IsTrue:[EasterEggActive]
+jmp:lbl_EasterEggActive
+jmp:lbl_EasterEggNotActive
+
+
+lbl:lbl_EasterEggActive
+/on this Label an easteregg is active
+
+/stuff
+
+jmp:lbl_part2
+
+lbl:lbl_EasterEggNotActive
+/on this Label an easteregg is not active
+
+/stuff
+
+lbl:lbl_part2
+
+
+
+/here we call the function Ebola from yanderechan
+/it will make the Yanderechan's "Egg" variable become True
+<YandereScript>:YandereChan:Call:Ebola
+
+
+/here we set the "Egg" variable back to false
+/it does not removes the easteregg
+/but it makes so we can activate an easteregg again
+<YandereScript>:YandereChan:Set:Egg:bool:false
+
+
+[EasterEggActive]:<YandereScript>:YandereChan:Egg
+
+if:IsTrue:[EasterEggActive]
+refposition:YandereChan:0,0,0
+refposition:YandereChan:5,5,5
+
+

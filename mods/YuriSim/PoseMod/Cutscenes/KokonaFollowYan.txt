@@ -1,0 +1,43 @@
+Oneframe:true
+//made by rino fukahori
+//setting kokona as the edit object, if you want to make it a different student follow you just change the student refname here
+SetEditObject:Student_30 (Kokona Haruka)
+AddAnimationsFrom:YandereChan:<0>
+DisableStudentPrompt:<0>
+RefPathfindingSpeed:<0>:5
+enablespeechlines:<0>:false
+RefPathfinding:<0>:YandereChan
+CharacterSetAnimLoop:<0>:f02_talking_01:1
+[idle]:<StudentScript>:<0>:IdleAnim
+CharacterReplaceAnim:<0>:f02_sprint_00:f02_sithRun_00
+CharacterReplaceAnim:<0>:f02_newSprint_00:f02_sithRun_00
+
+lbl:loop
+if:yanneareditobject:2.2
+jmp:studnear
+jmp:loop
+
+lbl:studnear
+RefPathfindingSpeed:<0>:1
+lbl:loop1
+if:yanneareditobject:1.2
+jmp:yes
+jmp:loop1
+
+lbl:yes
+enablespeechlines:<0>:true
+Pathfinding.Enabled:<0>:false
+<StudentScript>:<0>:Set:FocusOnYandere:bool:true
+//focus on yandere will make the student rotate towards yan
+CharacterSetIdleAnim:<0>:f02_talking_01
+//setting kokona's idle to a talking anim, bc the focus on yandere bool makes the student play their idle anim
+jmp:check1
+
+lbl:sprint
+CharacterSetIdleAnim:<0>:[idle]
+RefPathfindingSpeed:<0>:5
+enablespeechlines:<0>:false
+Pathfinding.Enabled:<0>:true
+RefPathfinding:<0>:YandereChan
+<StudentScript>:<0>:Set:FocusOnYandere:bool:false
+jmp:loop

@@ -1,0 +1,94 @@
+YanAddNew
+YanPlayExistingAnimation:f02_greet_00
+
+SubtitleSize:1:1:1
+SubtitleColor:1:1:1:1
+SubtitleText:(Sunstars) Hi! I Heard you had a task you need help with.
+Wait:3
+SubtitleClean
+
+CharacterAnimationPlay:Student_13 (Kizana Sunobu):f02_Task34_Line1
+
+SubtitleSize:1:1:1
+SubtitleColor:1:1:1:1
+SubtitleText:(Kizana) Yeah! Actually Yes!
+Wait:3
+SubtitleClean
+
+YanPlayExistingAnimation:f02_Tuesday_1
+
+SubtitleSize:1:1:1
+SubtitleColor:1:1:1:1
+SubtitleText:(Sunstars) So What is It?
+Wait:3
+SubtitleClean
+
+CharacterAnimationPlay:Student_13 (Kizana Sunobu):f02_Wednesday_1
+
+SubtitleSize:1:1:1
+SubtitleColor:1:1:1:1
+SubtitleText:(Kizana) My task is That i hate kokona's HairStyle! She Copied My Hair Style!
+Wait:3
+SubtitleClean
+
+YanPlayExistingAnimation:f02_Wednesday_3C
+
+SubtitleSize:1:1:1
+SubtitleColor:1:1:1:1
+SubtitleText:(Sunstars) Oh..
+Wait:3
+SubtitleClean
+
+CharacterAnimationPlay:Student_13 (Kizana Sunobu):f02_Task34_Line3
+
+SubtitleSize:1:1:1
+SubtitleColor:1:1:1:1
+SubtitleText:(Kizana) Go have a word With Her! And be useful!
+Wait:3
+SubtitleClean
+
+YanPlayExistingAnimation:f02_evilWitness_00
+
+SubtitleSize:1:1:1
+SubtitleColor:1:1:1:1
+SubtitleText:(Task) Kizana Sunobu Wants to be the Only Girl with Drills In This School Will You Accept?
+Wait:3
+SubtitleClean
+
+SubtitleSize:1:1:1
+SubtitleColor:1:1:1:1
+SubtitleText:(Buttons) A.Yes B.No
+Wait:3
+SubtitleClean
+
+SubtitleSize:1:1:1
+SubtitleColor:1:1:1:1
+SubtitleText:(Buttons) *Sunstars Presses A*
+Wait:3
+SubtitleClean
+
+SubtitleSize:1:1:1
+SubtitleColor:1:1:1:1
+SubtitleText:(Sunstars) Sure!
+Wait:3
+SubtitleClean
+
+YanPlayExistingAnimation:f02_scaredIdle_01
+
+CharacterAnimationPlay:Student_13 (Kizana Sunobu):f02_Thursday_3A
+
+SubtitleSize:1:1:1
+SubtitleColor:1:1:1:1
+SubtitleText:(Kizana) So? What are you still here! Go On!
+Wait:3
+SubtitleClean
+
+CharacterAnimationPlay:Student_13 (Kizana Sunobu):f02_gossip_01
+
+SubtitleSize:1:1:1
+SubtitleColor:1:1:1:1
+SubtitleText:(Kizana) Ughhhh
+Wait:3
+SubtitleClean
+
+CharacterAnimationPlay:Student_13 (Kizana Sunobu):f02_idleGraceful_00

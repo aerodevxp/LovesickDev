@@ -1,0 +1,14 @@
+//made by Tibu I  https://www.youtube.com/c/TibuYoutube/
+//To change what will happen on a certain week's day, find Week > Week{WEEKID}Days > 1/2/3/4/5 (for ex.: 1 stands for Monday, 3 for Wednesday and so on..)
+OneFrame:true
+StartCutscene:Week/1:true
+StartCutscene:Week/2:true
+StartCutscene:Week/3:true
+StartCutscene:Week/4:true
+StartCutscene:Week/5:true
+StartCutscene:Week/6:true
+StartCutscene:Week/7:true
+StartCutscene:Week/8:true
+StartCutscene:Week/9:true
+StartCutscene:Week/10:true
+OneFrame:false

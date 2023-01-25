@@ -1,0 +1,14 @@
+lbl:CheckForDayD_1
+if:(Weekday:Thursday)
+jmp:Week5_t_Thu_t
+jmp:Week5_t_Thu_f
+
+lbl:Week5_t_Thu_t
+//Replace this with the commands you want to execute on Week 5's thursday! ↓
+notification:Week 5 ; Thursday
+
+lbl:Week5_t_Thu_f
+End
+
+
+//made by Tibu I  https://www.youtube.com/c/TibuYoutube/

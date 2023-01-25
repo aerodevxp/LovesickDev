@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/ch1.rpy", line 117: expected statement.
+    h 1d at p11 "Jeez!{w=.2} What took you so long?"
+         ^
+
+Ren'Py Version: Ren'Py 7.3.5.606
+Tue Jan 05 02:53:57 2021

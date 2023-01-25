@@ -1,0 +1,30 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/ch1.rpy", line 251, in script
+    $addAffection('leah', 5, 'She liked it!')
+  File "game/ch1.rpy", line 251, in <module>
+    $addAffection('leah', 5, 'She liked it!')
+  File "game/hub.rpy", line 14, in addAffection
+    elif chr == 'l' or chr == 'leah':
+UnboundLocalError: local variable 'l_affection' referenced before assignment
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/ch1.rpy", line 251, in script
+    $addAffection('leah', 5, 'She liked it!')
+  File "C:\Users\Combo Studios\Documents\Renpy\renpy-7.3.5-sdk\renpy\ast.py", line 914, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\Combo Studios\Documents\Renpy\renpy-7.3.5-sdk\renpy\python.py", line 2028, in py_exec_bytecode
+    exec bytecode in globals, locals
+  File "game/ch1.rpy", line 251, in <module>
+    $addAffection('leah', 5, 'She liked it!')
+  File "game/hub.rpy", line 14, in addAffection
+    elif chr == 'l' or chr == 'leah':
+UnboundLocalError: local variable 'l_affection' referenced before assignment
+
+Windows-8-6.2.9200
+Ren'Py 7.3.5.606
+Project Chiwa 1.0
+Tue Dec 15 22:12:33 2020

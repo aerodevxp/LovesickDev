@@ -1,0 +1,62 @@
+//by Ana Caona#0335 <3
+
+OneFrame:true
+
+RefLocalPosition:YandereChan:-11.9:0:6.7
+RefLocalRotation:YandereChan:0:270:0
+
+RefLocalPosition:Student_25 (Saki Miyu):-14.7:0:6.2
+RefLocalRotation:Student_25 (Saki Miyu):0:360:0
+InEvent:Student_25 (Saki Miyu):true
+PathFinding.Enabled:Student_25 (Saki Miyu):false
+CanTalk:Student_25 (Saki Miyu):false
+
+RefLocalPosition:Student_30 (Kokona Haruka):-14.7:0:7.2
+RefLocalRotation:Student_30 (Kokona Haruka):0:180:0
+InEvent:Student_30 (Kokona Haruka):true
+PathFinding.Enabled:Student_30 (Kokona Haruka):false
+CanTalk:Student_30 (Kokona Haruka):false
+
+RotateTowards:Student_25 (Saki Miyu):Student_30 (Kokona Haruka)
+RotateTowards:Student_30 (Kokona Haruka):Student_25 (Saki Miyu)
+
+lbl:SakiSpot
+EditObject:Student_25 (Saki Miyu)
+if:(EditObjectNearPoint:-14.7,0,6.2:0.5)
+jmp:KokonaSpot
+jmp:SakiSpot
+
+lbl:KokonaSpot
+EditObject:Student_30 (Kokona Haruka)
+if:(EditObjectNearPoint:-14.7,0,7.2:0.5)
+jmp:EventStart
+jmp:KokonaSpot
+
+lbl:EventStart
+Subtitle.New:Hi sweetie !:4:Student_25 (Saki Miyu):10:0,128,128
+CharacterAnimationCrossfade:Student_25 (Saki Miyu):f02_greet_01
+CharacterAnimationCrossfade:Student_30 (Kokona Haruka):f02_tsunIdle_00
+Wait:4
+Subtitle.New:Hi bestie !:4:Student_30 (Kokona Haruka):10:128,0,128
+CharacterAnimationCrossfade:Student_25 (Saki Miyu):f02_idleShort_00
+CharacterAnimationCrossfade:Student_30 (Kokona Haruka):f02_greet_01
+Wait:3
+CharacterAnimationCrossfade:Student_25 (Saki Miyu):f02_greet_00
+CharacterAnimationCrossfade:Student_30 (Kokona Haruka):f02_greet_00
+Wait:2
+
+InEvent:Student_25 (Saki Miyu):false
+CanTalk:Student_25 (Saki Miyu):true
+PathFinding.Enabled:Student_25 (Saki Miyu):true
+Pathfinding.ReturnToRoutine:Student_25 (Saki Miyu)
+
+InEvent:Student_30 (Kokona Haruka):false
+CanTalk:Student_30 (Kokona Haruka):true
+PathFinding.Enabled:Student_30 (Kokona Haruka):true
+Pathfinding.ReturnToRoutine:Student_30 (Kokona Haruka)
+
+YanCanMove:true
+
+OneFrame:false
+
+end

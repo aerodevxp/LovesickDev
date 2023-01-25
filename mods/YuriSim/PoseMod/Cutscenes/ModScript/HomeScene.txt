@@ -1,0 +1,5 @@
+/ commands here will start automatically when you enter home
+/ (you can create these files with the name of a scene for the other scenes)
+
+
+

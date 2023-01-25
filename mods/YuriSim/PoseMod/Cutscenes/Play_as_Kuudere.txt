@@ -1,0 +1,15 @@
+
+//Make the whole file be run in a single frame, by default it's one cmd per frame
+OneFrame:true
+
+//Change to bald yandere hair
+YanHair:0
+
+//Copy the target hair model from StudentChan or StudentKun and parent it to yan
+HairToYan:NewKuudereHair
+
+//Replace YandereChan's materials with the target student's materials (for body texture)
+[student_tex]:<SkinnedMeshRenderer>:Student_4 (Kuu Dere)/Character/f02/f02_schoolwear_210_h:materials
+<SkinnedMeshRenderer>:YandereChan/Character/f02/f02_schoolwear_210_h:Set:materials:[student_tex]
+
+end

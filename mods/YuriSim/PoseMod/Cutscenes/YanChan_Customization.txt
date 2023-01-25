@@ -1,0 +1,43 @@
+//by Ana Caona#0335 <3
+
+//To set YandereChan's face texture :
+
+OpenTexture:FaceTexture.png
+Texture3:2:YandereChan
+
+//To change YanereChan's uniform texture and uniform type :
+//values : 1 is for the sailor, 2 for the long sleeves, 3 for the sweater, 4 for the blazer
+
+ChangeYanUniform:value
+OpenTexture:UniformTexture.png
+Texture3:0:YandereChan
+Texture3:1:YandereChan
+
+//To give YandereChan one of her hairstyles :
+
+YanHair:IDOfTheHair
+
+//To give YandereChan a student's hair :
+
+YanHair:0
+HairToYan2:HairRefname:NewName
+
+//To change YandereChan's anims :
+//1st possibility :
+
+YanAddNew
+YanReplaceAnim:f02_idleShort_00:newanim
+YanReplaceAnim:f02_newWalk_00:newanim
+YanReplaceAnim:animyouwanttoreplace:newanim
+
+//2nd possibility :
+
+YanAddNew
+YanSetIdleAnim:anim
+YanSetWalkAnim:anim
+YanSetRunAnim:anim
+
+//To set YanChan's club
+
+YanSetClub:value
+<YandereScript>:YandereChan:Call:ClubAccessory

@@ -1,0 +1,5 @@
+CharacterToEdit:Student_4 (Kuu Dere):true
+RefPositionRef:Student_4 (Kuu Dere):YandereChan
+CharacterAnimationCrossFade:Student_4 (Kuu Dere):f02_carefreeTalk_01
+
+//This cutscene was made by Hatluk, you can find my channel here: https://youtube.com/channel/UC6hksR4ALLiZaKaKAUqFTnQ

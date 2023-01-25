@@ -1,0 +1,7 @@
+YanCanMove:false
+YanCrossFadeExistingAnimation:f02_idleShort_00
+Notification:Press a number from 1 to 3 on your keyboard
+
+Key2:1:Venting/VentSpotMale1:true:KEY1
+Key2:2:Venting/VentSpotMale2:true:KEY2
+Key2:3:Venting/VentSpotMale3:true:KEY3

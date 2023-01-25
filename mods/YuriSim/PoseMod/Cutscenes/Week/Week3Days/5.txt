@@ -1,0 +1,14 @@
+lbl:CheckForDayE_1
+if:(Weekday:Friday)
+jmp:Week3_t_Fri_t
+jmp:Week3_t_Fri_f
+
+lbl:Week3_t_Fri_t
+//Replace this with the commands you want to execute on Week 3's friday! ↓
+notification:Week 3 ; Friday
+
+lbl:Week3_t_Fri_f
+End
+
+
+//made by Tibu I  https://www.youtube.com/c/TibuYoutube/

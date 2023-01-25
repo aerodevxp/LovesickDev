@@ -1,0 +1,14 @@
+lbl:CheckForDayA_1
+if:(Weekday:Monday)
+jmp:Week8_t_M_t
+jmp:Week8_t_M_f
+
+lbl:Week8_t_M_t
+//Replace this with the commands you want to execute on Week 8's monday! ↓
+notification:Week 8 ; Monday 
+
+lbl:Week8_t_M_f
+End
+
+
+//made by Tibu I  https://www.youtube.com/c/TibuYoutube/

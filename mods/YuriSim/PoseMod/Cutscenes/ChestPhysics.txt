@@ -1,0 +1,11 @@
+Oneframe:true
+<0>:YandereChan/Character/PelvisRoot/Hips/Spine/Spine1/Spine2/Spine3/LeftBreastRENAMED
+JiggleBone.Add:<0>
+JiggleBone.enabled:<0>:true
+JiggleBone.Damping:<0>:0.5
+JiggleBone.Mass:<0>:0.5
+<0>:YandereChan/Character/PelvisRoot/Hips/Spine/Spine1/Spine2/Spine3/RightBreastRENAMED
+JiggleBone.Add:<0>
+JiggleBone.enabled:<0>:true
+JiggleBone.Damping:<0>:0.5
+JiggleBone.Mass:<0>:0.5

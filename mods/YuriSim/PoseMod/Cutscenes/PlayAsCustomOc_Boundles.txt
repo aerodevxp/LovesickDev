@@ -1,0 +1,28 @@
+OneFrame:true
+
+/// Outfit
+
+AssetBundle.CreateFromFile:PoseMod/customoutfit.unity3d /(change name with you file name)
+AssetBundle.LoadAsync:hierarchy object name
+AssetBundle.Unload
+NewAsset:CustomName
+RiggedAccessoryAttacher:YandereChan:CustomName:CustomName/hierarchy object mesh mame
+Wait:0.1
+
+/// Make yanchan invisible
+YanVisible2:false
+
+
+/// Hairstyle
+
+YanHair:0
+AssetBundle.CreateFromFile:PoseMod/customhair.unity3d /(change name with you file name)
+AssetBundle.LoadAsync:hierarchy object name
+AssetBundle.Unload
+NewAsset:CustomName
+DeliYanHair:CustomName
+RefLocalPosition:CustomName:0.000:-1.442:0.017
+OneFrame:false
+
+Example cutscene created by ShaxOfficial#3164
+Yt channel: https://www.youtube.com/channel/UCfsEeuNIUnjnJzVVrvQtfkg

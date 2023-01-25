@@ -1,0 +1,10 @@
+C:\Users\Combo Studios\source\repos\FileGenerator\bin\Debug\FileGenerator.exe.config
+C:\Users\Combo Studios\source\repos\FileGenerator\bin\Debug\FileGenerator.exe
+C:\Users\Combo Studios\source\repos\FileGenerator\bin\Debug\FileGenerator.pdb
+C:\Users\Combo Studios\source\repos\FileGenerator\obj\Debug\FileGenerator.csprojAssemblyReference.cache
+C:\Users\Combo Studios\source\repos\FileGenerator\obj\Debug\FileGenerator.Form1.resources
+C:\Users\Combo Studios\source\repos\FileGenerator\obj\Debug\FileGenerator.Properties.Resources.resources
+C:\Users\Combo Studios\source\repos\FileGenerator\obj\Debug\FileGenerator.csproj.GenerateResource.cache
+C:\Users\Combo Studios\source\repos\FileGenerator\obj\Debug\FileGenerator.csproj.CoreCompileInputs.cache
+C:\Users\Combo Studios\source\repos\FileGenerator\obj\Debug\FileGenerator.exe
+C:\Users\Combo Studios\source\repos\FileGenerator\obj\Debug\FileGenerator.pdb

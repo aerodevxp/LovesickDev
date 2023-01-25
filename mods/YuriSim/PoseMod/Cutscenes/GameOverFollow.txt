@@ -1,0 +1,18 @@
+//cutscene made by Rino Fukahori
+Oneframe:true
+//setting kokona to be the edit object of the cutscene, so posemod doesn't have to search for her on every cmd
+SetEditObject:Student_30 (Kokona Haruka)
+enablespeechlines:<0>:false
+RefPathfinding:<0>:YandereChan
+RefPathfindingSpeed:<0>:6
+
+//checking if the edit object is near yan chan on every frame
+lbl:no
+if:yanneareditobject:1
+jmp:yes
+jmp:no
+
+lbl:yes
+newgameover:  nooob!!!:true
+end
+//creating a gameover if the if condition is true, then ending the cutscene.

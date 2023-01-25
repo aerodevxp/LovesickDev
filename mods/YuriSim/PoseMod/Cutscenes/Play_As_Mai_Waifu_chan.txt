@@ -1,0 +1,47 @@
+//made by rino fukahori
+SetEditObject:YandereChan
+[student_tex]:<SkinnedMeshRenderer>:Student_40 (Mai Waifu)/Character/f02/f02_schoolwear_210_h:materials
+<SkinnedMeshRenderer>:YandereChan/Character/f02/f02_schoolwear_210_h:Set:materials:[student_tex]
+YanHair:0
+YanAddNew
+YanBreastSize:2:2:2
+YanSetIdleAnim:f02_idleShort_01
+YanSetWalkAnim:f02_newWalk_01
+DeliYanHair:WaifuHair
+DeliYanHair:MaiBow_BackVersion
+LayerToYan2:WaifuHair
+LayerToYan2:MaiBow_BackVersion
+Shape:<0>:EyeType_Thin:2
+Shape:<0>:EyeType_Round:100
+Shape:<0>:EyeType_Delinquent:2
+Shape:<0>:EyeType_Gentle:102
+SetEditObject:Student_40 (Mai Waifu)
+StudentAnimation.Layer:<0>:f02_angryFace_00:999
+DuplicateChild:<0>:Iris:WaifuIris1
+DuplicateChild:<0>:Iris:WaifuIris2
+DuplicateChild:<0>:IrisLight:WaifuIrisLight1
+DuplicateChild:<0>:IrisLight:WaifuIrisLight2
+SetEditObject:WaifuIris1
+Attach:<0>:YandereChan/Character/PelvisRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/face/atama_n/eye_Left
+RefLocalPosition:<0>:-0.017:0:0.073
+RefLocalRotation:<0>:0:0:0
+LayerToYan2:<0>
+SetEditObject:WaifuIris2
+Attach:<0>:YandereChan/Character/PelvisRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/face/atama_n/eye_Right
+RefLocalPosition:<0>:0.017:0:-0.073
+RefLocalRotation:<0>:0:151:180
+LayerToYan2:<0>
+SetEditObject:WaifuIrisLight1
+Attach:<0>:YandereChan/Character/PelvisRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/face/atama_n/eye_Right
+RefLocalPosition:<0>:0.017:0:-0.074
+RefLocalRotation:<0>:0:151:180
+LayerToYan2:<0>
+SetEditObject:WaifuIrisLight2
+Attach:<0>:YandereChan/Character/PelvisRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/face/atama_n/eye_Left
+RefLocalPosition:<0>:-0.017:0:0.074
+RefLocalRotation:<0>:0:0:0
+LayerToYan2:<0>
+Wait:0.8
+Notification:Mai Waifu chan is now Mai Baldi chan!!!!
+end
+

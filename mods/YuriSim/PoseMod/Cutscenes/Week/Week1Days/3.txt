@@ -1,0 +1,13 @@
+lbl:CheckForDayC_1
+if:(Weekday:Wednesday)
+jmp:Week1_t_Wed_t
+jmp:Week1_t_Wed_f
+
+lbl:Week1_t_Wed_t
+//Replace this with the commands you want to execute on Week 1's wednesday! ↓
+notification:Week 1 ; Wednesday
+
+lbl:Week1_t_Wed_f
+End
+
+//made by Tibu I  https://www.youtube.com/c/TibuYoutube/

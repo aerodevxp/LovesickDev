@@ -1,0 +1,49 @@
+YanPlayExistingAnimation:f02_greet_00
+
+SubtitleSize:1:1:1
+SubtitleColor:1:1:1:1
+SubtitleText:(Sunstars) Hi! Kizana Told me She loves you're new hair!
+Wait:3
+SubtitleClean
+
+YanPlayExistingAnimation:f02_Tuesday_1
+
+CharacterAnimationPlay:Student_30 (Kokona Haruka):f02_Monday_1
+
+SubtitleSize:1:1:1
+SubtitleColor:1:1:1:1
+SubtitleText:(Kokona) Omg Really? Tell her i wanna be friends With her!
+Wait:3
+SubtitleClean
+
+SubtitleSize:1:1:1
+SubtitleColor:1:1:1:1
+SubtitleText:(Sunstars) Sure!
+Wait:3
+SubtitleClean
+
+YanPlayExistingAnimation:f02_embar_01
+
+CharacterAnimationPlay:Student_30 (Kokona Haruka):f02_talking_02
+
+SubtitleSize:1:1:1
+SubtitleColor:1:1:1:1
+SubtitleText:(Kokona) Thanks! Tell her i like her hair cut too!
+Wait:3
+SubtitleClean
+
+SubtitleSize:1:1:1
+SubtitleColor:1:1:1:1
+SubtitleText:(Sunstars) Okay!
+Wait:3
+SubtitleClean
+
+YanPlayExistingAnimation:f02_idle_00
+
+CharacterAnimationPlay:Student_30 (Kokona Haruka):f02_lookdown_00
+
+SubtitleSize:1:1:1
+SubtitleColor:1:1:1:1
+SubtitleText:(Kokona) Tysm!
+Wait:3
+SubtitleClean

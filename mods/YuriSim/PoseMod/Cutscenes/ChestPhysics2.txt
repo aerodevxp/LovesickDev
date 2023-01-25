@@ -1,0 +1,2 @@
+Physics.Enabled:YandereChan/Character/PelvisRoot/Hips/Spine/Spine1/Spine2/Spine3/LeftBreastRENAMED:true
+Physics.Enabled:YandereChan/Character/PelvisRoot/Hips/Spine/Spine1/Spine2/Spine3/RightBreastRENAMED:true

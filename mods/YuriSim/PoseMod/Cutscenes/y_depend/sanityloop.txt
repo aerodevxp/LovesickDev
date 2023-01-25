@@ -1,0 +1,49 @@
+
+lbl:loop1
+
+if:sanity:81
+jmp:goodsan
+
+if:sanity:61
+jmp:enoughsan
+
+if:sanity:41
+jmp:bruhsan
+
+if:sanity:21
+jmp:oofsan
+
+if:sanity:0
+jmp:nosan
+
+jmp:loop1
+end
+
+lbl:goodsan
+uilabelcolor:SanityNumberLabel:0.831, 0.921, 0.737
+jmp:loop1
+end
+
+lbl:enoughsan
+uilabelcolor:SanityNumberLabel:1, 0.529, 0.521
+jmp:loop1
+end
+
+lbl:bruhsan
+uilabelcolor:SanityNumberLabel:1, 0.180, 0.160
+jmp:loop1
+end
+
+lbl:oofsan
+uilabelcolor:SanityNumberLabel:0.760, 0.015, 0
+jmp:loop1
+end
+
+lbl:nosan
+uilabelcolor:SanityNumberLabel:0.831, 0.921, 0.737
+uilabelcolor:SanityNumberLabel:1, 0.529, 0.521
+uilabelcolor:SanityNumberLabel:1, 0.180, 0.160
+uilabelcolor:SanityNumberLabel:0.760, 0.015, 0
+uilabelcolor:SanityNumberLabel:0.360, 0.007, 0
+jmp:loop1
+end
